@@ -1,2 +1,3 @@
 # snippets
-Code snippets - Leetcode - Hackerrank
+
+Solving LeetCode-Hackerrank problems here.
