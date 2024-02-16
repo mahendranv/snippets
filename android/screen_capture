@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Function to capture device screenshot using ADB
+capture_screenshot() {
+	adb exec-out screencap -p > screenshot.png
+    ## adb shell screencap -p | tr -d '\r\n' > screenshot.png
+}
+
+# Function to copy screenshot to Mac's clipboard
+copy_to_clipboard() {
+	open ./screenshot.png
+    # pbcopy < screenshot.png
+}
+
+# Main function to execute the script
+main() {
+    capture_screenshot
+    copy_to_clipboard
+    echo "Screenshot captured and copied to clipboard!"
+}
+
+# Run the main function
+main

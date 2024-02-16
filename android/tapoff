@@ -1,0 +1,2 @@
+#!/bin/sh
+adb shell settings put system show_touches 0
